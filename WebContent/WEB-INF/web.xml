@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>quiz</display-name>
+  <servlet>
+  <servlet-name>a</servlet-name>
+  <servlet-class>quiz.SearchResult</servlet-class>
+  </servlet>
+  
+    <servlet>
+  <servlet-name>update</servlet-name>
+  <servlet-class>quiz.Update</servlet-class>
+  </servlet>
+  
+     <servlet>
+  <servlet-name>updated</servlet-name>
+  <servlet-class>quiz.Updated</servlet-class>
+  </servlet>
+  
+   <servlet>
+  <servlet-name>questiondisplay</servlet-name>
+  <servlet-class>quiz.QuestionDisplay</servlet-class>
+  </servlet>
+   <servlet>
+  <servlet-name>add</servlet-name>
+  <servlet-class>quiz.AddQuestions</servlet-class>
+  </servlet>
+    <servlet>
+  <servlet-name>upload</servlet-name>
+  <servlet-class>quiz.UploadQuestion</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>a</servlet-name>
+  <url-pattern>/searchresult</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>add</servlet-name>
+  <url-pattern>/inserted</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>upload</servlet-name>
+  <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>questiondisplay</servlet-name>
+  <url-pattern>/questiondisplay</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  <servlet-name>updated</servlet-name>
+  <url-pattern>/updated</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  <servlet-name>update</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+
+    <welcome-file>/Quiz.jsp</welcome-file>
+   
+  </welcome-file-list>
+</web-app>
